@@ -9,34 +9,14 @@
 
 ## Historial de commits
 
-- (Pendiente de análisis automático en Fase 3.)
-
-## Retroalimentación
-
-- Archivo revisado: Proyecto_DiscoAcrecion_RG2026_1.ipynb
-
-### Aspectos positivos
-
-- (Pendiente de análisis automático en Fase 3.)
-
-### Aspectos por mejorar
-
-- (Pendiente de análisis automático en Fase 3.)
-
-### Valoración global
-
-- Estado de recepción: pendiente de revisión automática inicial.
-
-## Historial de commits
-
 - Repositorio original: https://github.com/mariaisabelolarte/proyecto_relatividad
-- Fecha de creación del repositorio: 2026-04-14 (antes del 14 de abril: si)
+- Fecha de creación del repositorio: 2026-04-14 (antes del 14 de abril: sí)
 - Total de commits desde creación del repo: 9
 - Primer commit: 2026-04-17
 - Último commit: 2026-05-27
 - Días activos con commits: 9
 - Semanas activas con commits: 5
-- Mayor pausa entre commits: 14 días
+- Mayor pausa entre commits: 14 días (4-may → 18-may)
 
 ### Aplicación al repositorio
 
@@ -46,21 +26,28 @@
 - Iteración: 4.0
 - Nota de ritmo de commits (promedio): 4.25 / 5.0
 
-Interpretación breve: Ritmo aceptable con evidencia de trabajo distribuido.
+Interpretación breve: inicio en la fecha límite exacta, buen número de commits con trabajo distribuido en cinco semanas. La mayor pausa (14 días en la segunda quincena de mayo) indica una pequeña concentración de esfuerzo al final, pero en general el ritmo fue sostenido y constante.
+
 ## Retroalimentación
+
+- Archivo revisado: Proyecto_DiscoAcrecion_RG2026_1.ipynb
 
 ### Aspectos positivos
 
-- Hay secciones de métodologia/resultados con interpretación de hallazgos.
-- La mayoria de celdas de código están contextualizadas con texto explicativo previo.
+- El notebook cubre cinco secciones bien diferenciadas — dinámica newtoniana (Rebound), beaming relativista, jets astrofísicos, geodésicas de Schwarzschild y Kerr, y trayectorias de fotones — demostrando una integración real del material del curso.
+- Se incluye la **métrica de Kerr**, que va más allá de lo mínimo esperado. Los símbolos de Christoffel se calculan simbólicamente con SymPy, lo que refleja un manejo sólido del formalismo tensorial.
+- La sección de **beaming relativista** es rigurosa: se define el factor de beaming δ(β, θ) y el desplazamiento espectral z, se exploran distintos valores de β e i, y se usa un colormap personalizado para visualizar el corrimiento espectral a lo largo del disco, que es exactamente el fenómeno central del proyecto.
+- La narrativa general del notebook es fluida: la mayoría de los bloques de código están contextualizados con texto explicativo.
 
 ### Aspectos por mejorar
 
-- El objetivo principal no queda suficientemente explícito; conviene reportar de forma directa fecha y distancia de máxima aproximación en 2029.
-- El trabajo parece apoyarse en pocas estrategias; se sugiere contrastar con más de un enfoque numerico/teórico.
-- Hay celdas de código muy largas; se recomienda modularizar en funciones y dividir bloques extensos.
+- El notebook no tiene **sección de conclusiones**. Se recomienda agregar una sección final que responda directamente al objetivo del proyecto: ¿qué se simuló en cada parte?, ¿qué se aprendió?, ¿qué limitaciones tienen los modelos usados?
+- El enunciado pide **producir una imagen del disco** que integre los efectos calculados. Las cinco secciones quedan desconectadas entre sí; el paso que falta es articularlas en una figura síntesis que muestre el disco con corrimiento espectral, las órbitas relativistas y las trayectorias de fotones en un mismo marco.
+- Algunas celdas de código —en particular las que construyen animaciones y figuras interactivas— mezclan lógica de cálculo con lógica de graficación. Conviene separar ambas responsabilidades: primero calcular y guardar los datos en variables, luego graficar en una celda aparte, cada una con su texto explicativo.
+- Hay algunas celdas de código sin celda de texto anterior. Aunque sean celdas de apoyo (parámetros, condiciones iniciales), vale la pena antecederlas con una línea que explique qué se está definiendo y por qué se eligieron esos valores.
 
 ### Valoración global
 
-- El trabajo tiene avances técnicos, pero necesita mejoras de fondo en comunicación de resultados y/o cumplimiento explícito del objetivo.
-- Estado de recepción: requiere cambios antes de recepción final.
+- Trabajo ambicioso y técnicamente sólido, con buen nivel de apropiación de los temas del curso. Los dos puntos más importantes para completar el proyecto son la imagen síntesis del disco y la sección de conclusiones.
+- Estado de recepción: se recibe como fue entregado, con recomendaciones de mejora orientadas a completar el objetivo central del proyecto (imagen del disco) y fortalecer la comunicación científica del informe.
+
